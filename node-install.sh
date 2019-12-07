@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VERSION=10
+VERSION=12
 
 if [ `uname -m | grep armv6l` ]
 then
