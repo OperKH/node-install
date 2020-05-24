@@ -6,6 +6,9 @@ if [ `uname -m | grep armv6l` ]
 then
   sudo apt-get install -y curl xz-utils
 
+  # latest LTS for ARMv6
+  VERSION=10
+
   NODENAME=`curl -sL https://nodejs.org/dist/latest-v${VERSION}.x/SHASUMS256.txt | grep "node-v${VERSION}.*linux-armv6l.tar.xz" -o`
   NODEFOLDERNAME=${NODENAME:0:-7}
 
